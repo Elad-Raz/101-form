@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>טופס 101</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>כרטיס עובד - טופס 101</h1>
+    <hr />
+    <h3>בקשה להקלה ולתיאום מס על ידי המעביד</h3>
+    <h4>יש מלא את הפרטים באופן דיגיטלי בלבד</h4>
+    <form action="https://formspree.io/f/mwkzdwyg" method="post">
+      <h3>
+        <input
+          type="number"
+          name="שנת מס"
+          id="tax-year"
+          placeholder="הזן את שנת המס"
+        />
+      </h3>
+      <h2>א. פרטי המעביד</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>
+              <input
+                type="text"
+                name=" שם המעביד"
+                id="employer-name"
+                placeholder="שם"
+              />
+            </th>
+            <th>
+              <input
+                type="text"
+                name=" כתובת המעביד"
+                id="employer-address"
+                placeholder="כתובת"
+              />
+            </th>
+            <th>
+              <input
+                type="text"
+                name=" טלפון המעביד"
+                id="employer-phone-num"
+                placeholder="מס' טלפון"
+              />
+            </th>
+            <th>
+              <input
+                type="text"
+                name="תיק ניכויים"
+                id="id-nikuim"
+                placeholder="מספר תיק ניכויים"
+              />
+            </th>
+          </tr>
+        </thead>
+      </table>
+      <h2>ב. פרטי העובד</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>
+              <input
+                type="text"
+                name="ת.ז"
+                id="id"
+                placeholder="מספר תעודת זהות"
+              />
+            </th>
+            <th>
+              <input
+                type="text"
+                name="שם פרטי"
+                id="employee-first-name"
+                placeholder="שם פרטי"
+              />
+            </th>
+            <th>
+              <input
+                type="text"
+                name="שם משפחה"
+                id="employee-surname"
+                placeholder="שם משפחה"
+              />
+            </th>
+            <th>
+              <input
+                type="datetime"
+                name="ת. לידה"
+                id="employee-birth-date"
+                placeholder="תאריך לידה"
+              />
+            </th>
+            <th>
+              <input
+                type="text"
+                name="תאריך עליה"
+                id="immigration-date"
+                placeholder="תאריך עליה"
+              />
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <input
+                type="text"
+                name=" כתובת, רחוב"
+                id="employee-address-street"
+                placeholder="רחוב/שכונה"
+              />
+            </th>
+            <th>
+              <input
+                type="text"
+                name="כתובת, מספר"
+                id="employee-address-number"
+                placeholder="מספר"
+              />
+            </th>
+            <th>
+              <input
+                type="text"
+                name="כתובת, עיר"
+                id="employee-address-city"
+                placeholder="עיר"
+              />
+            </th>
+            <th>
+              <input
+                type="text"
+                name="כתובת, מיקוד"
+                id="employee-address-zipcode"
+                placeholder="מיקוד"
+              />
+            </th>
+            <th>
+              <input
+                type="text"
+                name="טלפון עובד"
+                id="employee-phone-number"
+                placeholder="טלפון"
+              />
+            </th>
+          </tr>
+          <tr>
+            <td>
+              מין
+              <br />
+              <label for="gender-male">זכר</label>
+              <input type="radio" name="מין" id="gender-male" value="זכר" />
+              <label for="gender-female">נקבה</label>
+              <input type="radio" name="מין" id="gender-female" value="נקבה" />
+            </td>
+            <td>
+              סטטוס אישי
+              <br />
+              <label for="bachelor">רווק/ה</label>
+              <input type="radio" name="status" id="bachelor" value="רווק" />
+              <label for="married">נשוי/אה</label>
+              <input type="radio" name="status" id="married" value="נשוי/אה" />
+              <label for="divorcee">גרוש/ה</label>
+              <input type="radio" name="status" id="divorcee" value="גרוש/ה" />
+              <label for="widower">אלמנ/ה</label>
+              <input type="radio" name="status" id="widower" value="אלמנ/ה" />
+            </td>
+            <td>
+              האם את/ה תושב/ת ישראל?
+              <br />
+              <label for="resident-yes">כן</label>
+              <input
+                type="radio"
+                name="resident"
+                id="resident-yes"
+                value="כן"
+              />
+              <label for="resident-no">לא</label>
+              <input type="radio" name="resident" id="resident-no" value="לא" />
+            </td>
+            <td colspan="2">
+              <input
+                type="number"
+                name="ילדים מתחת לגיל 19"
+                id="kids-under-19"
+                placeholder="מס' ילדים מתחת לגיל 19"
+              />
+            </td>
+          </tr>
+        </thead>
+      </table>
+      <button type="reset">נקה טופס</button>
+      <button type="submit">הגש טופס</button>
+    </form>
+  </body>
+</html>
