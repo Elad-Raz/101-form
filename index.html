@@ -573,7 +573,99 @@
         </tr>
       </table>
 
+      <h2>ז. שינויים במהלך השנה</h2>
+      <table>
+        <table>
+          <tr colspan="7">
+            <th>תאריך השינוי</th>
+            <th>פרטי השינוי</th>
+            <th>חתימת העובד</th>
+          </tr>
+          <tbody>
+            <tr>
+              <td>
+                <input type="date" name="תאריך שנוי 1" id="change-date-1" />
+              </td>
+              <td>
+                <input type="text" name="פרטי שינוי 1" id="change-details-1" />
+              </td>
+
+              <td>
+                <input
+                  type="text"
+                  name="חתימת שינוי 1"
+                  id="change-signature-1"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="date" name="תאריך שנוי 2" id="change-date-2" />
+              </td>
+              <td>
+                <input type="text" name="פרטי שינוי 2" id="change-details-2" />
+              </td>
+
+              <td>
+                <input
+                  type="text"
+                  name="חתימת שינוי 2"
+                  id="change-signature-2"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="date" name="תאריך שנוי 3" id="change-date-3" />
+              </td>
+              <td>
+                <input type="text" name="פרטי שינוי 3" id="change-details-3" />
+              </td>
+
+              <td>
+                <input
+                  type="text"
+                  name="חתימת שינוי 3"
+                  id="change-signature-3"
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </table>
+
+      <h2>ח. אני מבקש פטור / זיכוי ממס מהסיבות הבאות</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>
+              <label for="israeli-resident">אני תושב ישראל</label>
+              <input
+                type="checkbox"
+                name="המשתמש תושב ישראל"
+                id="israeli-resident"
+              />
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <label for="user-disability"
+                >אני סובל מנכות רפואית כהגדרתה בחוק</label
+              >
+              <input
+                type="checkbox"
+                name="המשתמש בעל נכות רפואית"
+                id="user-disability"
+              />
+            </th>
+          </tr>
+        </thead>
+      </table>
+
       <br /><br /><br />
+      <label for="user-fiels">אנא צרף אסמכתאות מתאימות</label>
+      <input type="file" name="מסמכים מצורפים" id="user-fiels" />
+      <br /><br />
       <button type="reset">נקה טופס</button>
       <button type="submit">הגש טופס</button>
     </form>
